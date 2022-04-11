@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content1 side"
+    "content2 side"
+    "footer footer";
+  grid-gap: 8px;
+  grid-template-columms: auto auto;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+header {
+  grid-area: header;
+  background-color: green;
+}
+#side {
+   grid-area: side;
+  background-color: yellow;
+}
+#intro {
+   grid-area: content1;
+  background-color: blue;
+}
+#webDevelopmentSection {
+  grid-area: content2;
+  background-color: purple  
+}
+
+footer {
+  grid-area: footer;
+  background-color: red;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+.listItem {
+  list-style-type: none;
+}
